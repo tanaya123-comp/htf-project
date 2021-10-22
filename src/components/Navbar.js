@@ -17,6 +17,7 @@ function Navbar() {
         <Tab label="Home" />
         <Tab label="Profile" />
         <Tab label="Leaderboard" />
+        <Tab label="Events" />
         
       </Tabs>
     </Box>
