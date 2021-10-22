@@ -1,3 +1,15 @@
 .container{
-    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5vh;
+    padding-top: 5vh;
+}
+
+.searchbar{
+    background:#fff;
+    width: 345px;
+    height:4vh;
+    
 }
