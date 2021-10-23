@@ -290,7 +290,7 @@ export default function EnhancedTable() {
                 .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
                 .map((row, index) => {
                   const isItemSelected = isSelected(row.name);
-                  const labelId = `enhanced-table-checkbox-${index}`;
+                  const labelId = `enhanced-table-checkbox-${index+1}`;
 
                   return (
                     <TableRow
@@ -304,7 +304,7 @@ export default function EnhancedTable() {
                     >
                     
                       <TableCell>
-                       1.
+                       {index+1}
                       </TableCell>
                       <TableCell
                         component="th"

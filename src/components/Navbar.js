@@ -2,7 +2,10 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
+import Button from '@mui/material/Button';
+import SawoLogin from 'sawo-react';
 import {Link} from 'react-router-dom';
+import sawoLogin from './sawoLogin';
 
 
 function Navbar() {
@@ -19,7 +22,7 @@ function Navbar() {
         <Tab style={{color:'white'}} label="Profile" to='/profile' component={Link}/>
         <Tab style={{color:'white'}} label="Leaderboard" to='/Leaderboard' component={Link} />
         <Tab style={{color:'white'}} label="Events" to='/events' component={Link}/>
-        
+        <Button variant="contained" href='/sawoLogin' sx={{bgcolor:'black',align:'right',}}>Sign Up/Sign In </Button> 
       </Tabs>
     </Box>
   );

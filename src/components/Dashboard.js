@@ -24,6 +24,7 @@ import marathon from '../images/marathon.jpg';
 import cycle from '../images/cycle.jpg';
 import trek from '../images/trek.jpg';
 import TextField from "@mui/material/TextField";
+import activity from '../Data/BadgeInfo.js'
 
 
 function Dashboard() {
@@ -213,6 +214,30 @@ function Dashboard() {
 
         
         </Grid>
+
+
+        <div>
+        {activity.map(item => (
+                    <Card style={{ marginTop: "10px",width:'1000px' }}>
+                        <Grid container spacing={2}>
+                            <Grid item lg={3} style={{ marginTop: "auto", marginBottom: "auto" }}>
+                                <img src={item.img} alt="Badge" className="badge-icon" />
+                            </Grid>
+                            <Grid item lg={6} style={{ marginTop: "auto", marginBottom: "auto" }}>
+                                <Typography gutterBottom variant="h6" component="div">
+                                    {item.organisation}
+                                </Typography>
+                                <Typography gutterBottom variant="p" component="div">
+                                    {item.description}
+                                </Typography>
+                            </Grid>
+                            <Grid item lg={3} style={{ marginTop: "auto", marginBottom: "auto" }}>
+                                {item.date}
+                            </Grid>
+                        </Grid>
+                    </Card>
+                ))}
+        </div>
 
     </div>
   );
