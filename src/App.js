@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Leaderboard from "./components/Leaderboard";
 import Profile from "./components/Profile";
 import OrganisationInfo from "./components/OrganisationInfo";
+import sawoLogin from "./components/sawoLogin";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route exact path='/events' component={Events}></Route>
           <Route exact path="/profile" component={Profile}></Route>
           <Route exact path="/organisationInfo" component={OrganisationInfo}></Route>
+          <Route exact path="/sawoLogin" component={sawoLogin}></Route>
         </Switch>
 
       </Router>
