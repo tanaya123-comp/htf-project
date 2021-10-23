@@ -30,7 +30,7 @@ function Copyright() {
     <Typography variant="body2" color="text.secondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="">
-Hack This Fall 2.0
+        Hack This Fall 2.0
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -44,14 +44,14 @@ const theme = createTheme();
 
 
 export default function Album() {
-    const [value, onChange] = useState(new Date());
+  const [value, onChange] = useState(new Date());
   return (
 
     <ThemeProvider theme={theme}>
       <CssBaseline />
-    
+
       <main>
-    
+
         <Container sx={{ py: 8 }} maxWidth="l">
           {/* End hero unit */}
           <Grid container spacing={4}>
@@ -70,24 +70,19 @@ export default function Album() {
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
                     <Typography gutterBottom variant="h5" component="h2">
-                    One Tree Planted
-
+                      One Tree Planted
                     </Typography>
-                 
+                    <div>
+                      Select Date
+                      <DatePicker onChange={onChange} value={value} />
+                    </div>
+                    <br />  
+                    <div>
+                      Enter Email
+                      <TextField id="email" type="email" />
+                    </div>
                   </CardContent>
-                  <CardActions >
-                      <div >
-                             Select Date 
-                  <DatePicker  onChange={onChange} value={value}/>
-                          </div>
-                          <br/>
-                          <Divider />
-                          <div>
-                             Enter Email
-                             <TextField id="email" type="email"/>
-                          </div>
-                          
-
+                  <CardActions>
                     <Button size="small">Confirm</Button>
                     <Button size="small">Know More</Button>
                   </CardActions>
