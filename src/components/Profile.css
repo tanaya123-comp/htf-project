@@ -1,0 +1,20 @@
+.container {
+    min-height: 100vh;
+}
+
+.title-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.badge-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 4px;
+    padding: 3px;
+}
+.badge-icon {
+    height: 160px;
+    width: 160px;
+}
