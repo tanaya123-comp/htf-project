@@ -304,7 +304,7 @@ export default function EnhancedTable() {
                     >
                     
                       <TableCell>
-                       1.
+                       {index+1}
                       </TableCell>
                       <TableCell
                         component="th"
