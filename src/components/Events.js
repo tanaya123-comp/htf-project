@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Button from '@mui/material/Button';
 import CameraIcon from '@mui/icons-material/PhotoCamera';
@@ -15,17 +15,22 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import Divider from '@mui/material/Divider';
+
 import img1 from '../images/img1.png';
 import img2 from '../images/img2.png';
 import img3 from '../images/img3.png';
 import img4 from '../images/img4.png';
+import DatePicker from 'react-date-picker';
+import TextField from '@mui/material/TextField';
+
 
 function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="">
-Hack This Fall 2.0
+        Hack This Fall 2.0
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -37,14 +42,17 @@ const cards = [1, 2, 3, 4, 5];
 
 const theme = createTheme();
 
+
 export default function Album() {
+  const [value, onChange] = useState(new Date());
   return (
+
     <ThemeProvider theme={theme}>
       <CssBaseline />
-    
+
       <main>
-    
-        <Container sx={{ py: 8 }} maxWidth="md">
+
+        <Container sx={{ py: 8 }} maxWidth="l">
           {/* End hero unit */}
           <Grid container spacing={4}>
             {cards.map((card) => (
@@ -62,16 +70,21 @@ export default function Album() {
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
                     <Typography gutterBottom variant="h5" component="h2">
-                    One Tree Planted
-
+                      One Tree Planted
                     </Typography>
-                    <Typography>
-                    We want to make it simple for anyone to help the environment by planting trees. Together we can restore forests, create habitat for biodiversity, and make a positive social impact around the world.
-                    </Typography>
+                    <div>
+                      Select Date
+                      <DatePicker onChange={onChange} value={value} />
+                    </div>
+                    <br />  
+                    <div>
+                      Enter Email
+                      <TextField id="email" type="email" />
+                    </div>
                   </CardContent>
                   <CardActions>
-                    <Button size="small">View More</Button>
-                    <Button size="small">Details</Button>
+                    <Button size="small">Confirm</Button>
+                    <Button size="small">Know More</Button>
                   </CardActions>
                 </Card>
               </Grid>
