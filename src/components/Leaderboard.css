@@ -1,0 +1,24 @@
+#main{
+    max-width: 90%;
+    
+    margin-left: 5%;
+    margin-right: 5%;
+    
+
+}
+
+#mainRow{
+    background-color: #40916c ;
+}
+
+#mainComp{
+    font: bolder;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+#tableTitle{
+    
+    font-style: bolder;
+}
+

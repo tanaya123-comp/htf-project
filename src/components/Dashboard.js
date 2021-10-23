@@ -2,7 +2,7 @@ import React from "react";
 import "./Dashboard.css";
 import Post from "./Post";
 import TextField from "@mui/material/TextField";
-import posts from '../Data/Posts';
+import posts from '../data/Posts';
 
 function Dashboard() {
   return (
