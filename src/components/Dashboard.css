@@ -3,8 +3,6 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    margin-top: 5vh;
-    padding-top: 5vh;
 }
 
 .searchbar{
@@ -13,3 +11,25 @@
     height:4vh;
     
 }
+
+.carousel-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.eventCard{
+    height:300px;
+    padding: 10px;
+    
+}
+
+.button{
+    height:35px;
+    width:100px;
+    background-color: green;
+    margin-top: 20px;
+    border-radius: 5px;
+    color:white
+}
+

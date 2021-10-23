@@ -14,9 +14,9 @@ function Navbar() {
   return (
     <Box sx={{ width: '100%', bgcolor: '#40916c' }}>
       <Tabs value={value} onChange={handleChange} centered>
-        <Tab label="Home" />
-        <Tab label="Profile" />
-        <Tab label="Leaderboard" />
+        <Tab style={{color:'white'}} label="Home" />
+        <Tab style={{color:'white'}} label="Profile" />
+        <Tab style={{color:'white'}} label="Leaderboard" />
         
       </Tabs>
     </Box>
