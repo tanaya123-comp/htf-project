@@ -56,7 +56,7 @@ export default function Album() {
           {/* End hero unit */}
           <Grid container spacing={4}>
             {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+              <Grid item key={card} xs={12} sm={6} md={3}>
                 <Card
                   sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                 >
@@ -73,18 +73,23 @@ export default function Album() {
                       One Tree Planted
                     </Typography>
                     <div>
-                      Select Date
-                      <DatePicker onChange={onChange} value={value} />
+                      Select Date &nbsp;
+                      <input type="date" />
+                      {/* <DatePicker className="date" onChange={onChange} value={value} /> */}
                     </div>
-                    <br />  
+                    {/* <br />   */}
                     <div>
-                      Enter Email
-                      <TextField id="email" type="email" />
+                      Enter Email &nbsp;
+                      <input id="email" type="email" />
                     </div>
                   </CardContent>
                   <CardActions>
-                    <Button size="small">Confirm</Button>
-                    <Button size="small">Know More</Button>
+                      <div style={{display:'block', margin: 'auto'}}>
+                    <Button size="large">Confirm</Button>
+                    <br/>
+                    {/* <br/> */}
+                    <Button size="small" style={{display:'flex', justifyContent: 'center'}}>Know More</Button>
+                 </div>
                   </CardActions>
                 </Card>
               </Grid>
