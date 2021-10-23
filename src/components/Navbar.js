@@ -17,6 +17,7 @@ function Navbar() {
         <Tab style={{color:'white'}} label="Home" />
         <Tab style={{color:'white'}} label="Profile" />
         <Tab style={{color:'white'}} label="Leaderboard" />
+        <Tab style={{color:'white'}} label="Events"/>
         
       </Tabs>
     </Box>

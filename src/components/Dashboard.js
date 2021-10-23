@@ -23,6 +23,8 @@ import clean from '../images/clean.jpg';
 import marathon from '../images/marathon.jpg';
 import cycle from '../images/cycle.jpg';
 import trek from '../images/trek.jpg';
+import TextField from "@mui/material/TextField";
+
 
 function Dashboard() {
   const [category, setCategory] = React.useState("");
