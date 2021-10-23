@@ -10,9 +10,10 @@ function App() {
   return (
     <div className="App">
       <header className='App-header'>
-      <Navbar />
+      
      
       <Router>
+      <Navbar />
 
       <Switch>
         <Route exact path='/' component={Dashboard}></Route>

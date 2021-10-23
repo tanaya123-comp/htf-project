@@ -1,6 +1,6 @@
 import React from 'react'
 import './Leaderboard.css'
-import EnhancedTable from '../data/EnhancedTable'
+import EnhancedTable from '../Data/EnhancedTable'
 
 
 function Leaderboard() {
