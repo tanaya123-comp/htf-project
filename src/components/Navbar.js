@@ -2,6 +2,8 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
+import Button from '@mui/material/Button';
+import SawoLogin from 'sawo-react';
 
 
 function Navbar() {
@@ -18,7 +20,7 @@ function Navbar() {
         <Tab label="Profile" />
         <Tab label="Leaderboard" />
         <Tab label="Events" />
-        
+        <Button variant="contained" href="#contained-buttons" id="sawo-container" sx={{bgcolor:'black',align:'right',}}>Sign Up/Sign In </Button> 
       </Tabs>
     </Box>
   );
