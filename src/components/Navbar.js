@@ -4,6 +4,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Button from '@mui/material/Button';
 import SawoLogin from 'sawo-react';
+import {Link} from 'react-router-dom';
 
 
 function Navbar() {
@@ -16,10 +17,10 @@ function Navbar() {
   return (
     <Box sx={{ width: '100%', bgcolor: '#40916c' }}>
       <Tabs value={value} onChange={handleChange} centered>
-        <Tab label="Home" />
-        <Tab label="Profile" />
-        <Tab label="Leaderboard" />
-        <Tab label="Events" />
+        <Tab style={{color:'white'}} label="Home"  to='/' component={Link} />
+        <Tab style={{color:'white'}} label="Profile" to='/profile' component={Link}/>
+        <Tab style={{color:'white'}} label="Leaderboard" to='/Leaderboard' component={Link} />
+        <Tab style={{color:'white'}} label="Events" to='/events' component={Link}/>
         <Button variant="contained" href="#contained-buttons" id="sawo-container" sx={{bgcolor:'black',align:'right',}}>Sign Up/Sign In </Button> 
       </Tabs>
     </Box>
