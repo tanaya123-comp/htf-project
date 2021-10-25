@@ -1,6 +1,5 @@
 # Eco-lution 
-
- A website that helps conserve nature by engaging users in eco-friendly activities .
+An app that bridges the gap between the organizations that want to work for the environment and climate change and folks who are willing to help, by giving out tasks and activities.
 
 ##  Inspiration:
 
