@@ -21,8 +21,10 @@ import img1 from '../images/img1.png';
 import img2 from '../images/img2.png';
 import img3 from '../images/img3.png';
 import img4 from '../images/img4.png';
+import img5 from '../images/img5.png';
 import DatePicker from 'react-date-picker';
 import TextField from '@mui/material/TextField';
+import { useHistory } from 'react-router';
 
 
 function Copyright() {
@@ -38,13 +40,39 @@ function Copyright() {
   );
 }
 
-const cards = [1, 2, 3, 4, 5];
+const cards = [
+  {
+    id:1,
+    img:img1,
+  },
+  {
+    id:2,
+    img:img2,
+  },
+  {
+    id:3,
+    img:img3,
+  }
+  ,
+  {
+    id:4,
+    img:img4
+  }
+  ,{
+    id:5,
+    img:img5
+  }
+
+];
 
 const theme = createTheme();
 
 
 export default function Album() {
   const [value, onChange] = useState(new Date());
+
+  const history=useHistory();
+
   return (
 
     <ThemeProvider theme={theme}>
@@ -60,13 +88,14 @@ export default function Album() {
                 <Card
                   sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                 >
-                  <CardMedia
-                    component="img"
-                    sx={{
-                      pt: '26.25%',
-                    }}
-                    image={img1}
-                    alt="random"
+                  <img
+                    // component="img"
+                    // sx={{
+                    //   pt: '26.25%',
+                    // }}
+                    src={card.img}
+                    style={{height:'200px',width:'200px',marginLeft:'4vw'}}
+                    // alt="random"
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -88,7 +117,7 @@ export default function Album() {
                     <Button size="large">Confirm</Button>
                     <br/>
                     {/* <br/> */}
-                    <Button size="small" style={{display:'flex', justifyContent: 'center'}}>Know More</Button>
+                    <Button size="small" onClick={()=>history.push('/organisationInfo')} style={{display:'flex', justifyContent: 'center'}}>Know More</Button>
                  </div>
                   </CardActions>
                 </Card>

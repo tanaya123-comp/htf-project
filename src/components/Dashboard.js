@@ -24,11 +24,15 @@ import marathon from '../images/marathon.jpg';
 import cycle from '../images/cycle.jpg';
 import trek from '../images/trek.jpg';
 import TextField from "@mui/material/TextField";
-import activity from '../Data/BadgeInfo.js'
+import activity from '../Data/BadgeInfo.js';
+import { useHistory } from 'react-router';
+import { Button } from "@material-ui/core";
 
 
 function Dashboard() {
   const [category, setCategory] = React.useState("");
+
+  const history=useHistory();
 
   const handleChange = (event) => {
     setCategory(event.target.value);
@@ -88,7 +92,7 @@ function Dashboard() {
             </div>
 
             <div>
-              <button className='button'>View Events</button>
+              <Button variant='contained' color='secondary' onClick={()=>history.push('/events')}>View Events</Button>
             </div>
 
           </Card>
@@ -105,7 +109,7 @@ function Dashboard() {
             </div>
 
             <div>
-              <button className='button'>View Events</button>
+              <Button variant='contained' color='secondary' onClick={()=>history.push('/events')}>View Events</Button>
             </div>
 
           </Card>
@@ -122,7 +126,7 @@ function Dashboard() {
             </div>
 
             <div>
-              <button className='button'>View Events</button>
+              <Button variant='contained' color='secondary' onClick={()=>history.push('/events')}>View Events</Button>
             </div>
 
           </Card>
@@ -138,7 +142,7 @@ function Dashboard() {
             </div>
 
             <div>
-              <button className='button'>View Events</button>
+              <Button variant='contained' color='secondary' onClick={()=>history.push('/events')}>View Events</Button>
             </div>
 
           </Card>
@@ -155,7 +159,7 @@ function Dashboard() {
             </div>
 
             <div>
-              <button className='button'>View Events</button>
+              <Button variant='contained' color='secondary' onClick={()=>history.push('/events')}>View Events</Button>
             </div>
 
           </Card>
@@ -187,7 +191,7 @@ function Dashboard() {
             </div>
 
             <div>
-              <button className='button'>View Events</button>
+              <Button variant='contained' color='secondary' onClick={()=>history.push('/events')}>View Events</Button>
             </div>
 
           </Card>
@@ -204,7 +208,7 @@ function Dashboard() {
             </div>
 
             <div>
-              <button className='button'>View Events</button>
+              <Button variant='contained' color='secondary' onClick={()=>history.push('/events')}>View Events</Button>
             </div>
 
           </Card>

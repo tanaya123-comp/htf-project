@@ -1,7 +1,7 @@
 import React from 'react';
 import './Leaderboard.css';
-import EnhancedTable from '../data/EnhancedTable';
-import crown from '../images/crown.jpg';
+import EnhancedTable from '../Data/EnhancedTable';
+import crown from '../images/crown.png';
 
 
 function Leaderboard() {

@@ -11,8 +11,8 @@ import Grid from '@mui/material/Grid';
 
 import RoomIcon from '@mui/icons-material/Room';
 
-import badges from '../data/BadgeList';
-import activity from '../data/PastActivity'
+import badges from '../Data/BadgeList';
+import activity from '../Data/PastActivity'
 
 import LevelTimeline from './LevelTimeline';
 

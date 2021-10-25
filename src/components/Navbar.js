@@ -16,13 +16,13 @@ function Navbar() {
   };
 
   return (
-    <Box sx={{ width: '100%', bgcolor: '#40916c' }}>
+    <Box sx={{ width: '100%', bgcolor: '#92cf34' }}>
       <Tabs value={value} onChange={handleChange} centered>
         <Tab style={{color:'white'}} label="Home"  to='/' component={Link} />
         <Tab style={{color:'white'}} label="Profile" to='/profile' component={Link}/>
         <Tab style={{color:'white'}} label="Leaderboard" to='/Leaderboard' component={Link} />
         <Tab style={{color:'white'}} label="Events" to='/events' component={Link}/>
-        <Button variant="contained" href='/sawoLogin' sx={{bgcolor:'black',align:'right',}}>Sign Up/Sign In </Button> 
+        <Tab style={{color:'white'}} to='/sawoLogin' label='Sign Up/Sign In'  /> 
       </Tabs>
     </Box>
   );
